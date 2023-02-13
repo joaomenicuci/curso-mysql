@@ -1,4 +1,4 @@
-# **MY SQL**
+# **ANOTAÇÕES DE MY SQL**
 
 ## **TIPOS DE COMANDOS DE SQL**
 
