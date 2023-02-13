@@ -15,7 +15,7 @@ insert into
 ```
 ## **CRIAR BANCO DE DADOS**
 
-create database XXXX<br>
+create database *nome_bd*<br>
 default character set utf8<br>
 default collate utf8_general_ci;
 
@@ -27,8 +27,8 @@ default collate utf8_general_ci;
 
 ## **CRIAR TABELAS DENTRO DO BANDO DE DADOS**
 
-create table XXXX (<br>
-nome_da_coluna tipo_primitivo config_adicional,<br>
+create table *nome_tabela* (<br>
+*nome_da_coluna tipo_primitivo config_adicional*,<br>
 ) default charset = utf8;
 
 ### EXEMPLO:
@@ -46,8 +46,8 @@ nome_da_coluna tipo_primitivo config_adicional,<br>
 
 ## **DELETAR BANCO DE DADOS OU TABELAS**
 
-drop database XXXX;<br>
-drop table XXXX;
+drop database *nome_bd*;<br>
+drop table *nome_tabela*;
 
 ### EXEMPLO:
 
@@ -56,7 +56,7 @@ drop table XXXX;
 
 ## **ADICIONAR DADOS NA TABELA**
 
-insert into XXXX<br>
+insert into *nome_tabela*<br>
 (coluna1, coluna2, ..., colunaN)<br>
 values<br>
 (dado1, dado2, ..., dadoN)
@@ -67,14 +67,14 @@ values<br>
 `values`<br>
 `('Godofredo', '1984-12-25', 'M', '78.5', '1.83', 'Brasil');`
 
-## **ALTERAR DADOS NA TABELA**
+## **ALTERANDO ESTRUTURA**
 
-alter table XXXX<br>
-add column nome_coluna tipo_primitivo after XXXX;<br>
-drop column nome_coluna;<br>
-modify column nome_coluna novo_tipo_primitivo;<br>
-change column nome_coluna novo_nome_coluna novo_tipo_primitivo;<br>
-rename to novo_nome_tabela;
+alter table *nome_tabela*<br>
+add column *nome_coluna* *tipo_primitivo* after *nome_coluna*;<br>
+drop column *nome_coluna*;<br>
+modify column *nome_coluna* *novo_tipo_primitivo*;<br>
+change column *nome_coluna* *novo_nome_coluna* *novo_tipo_primitivo*;<br>
+rename to *novo_nome_tabela*;
 
 ### EXEMPLO
 
@@ -84,3 +84,15 @@ rename to novo_nome_tabela;
 `modify column profissao varchar(20);`<br>
 `change column profissao prof varchar(20);`<br>
 `rename to população;`
+
+## **MANIPULANDO LINHAS**
+
+update *nome_tabela*<br>
+set *nome_coluna* = '*novo_valor*'<br>
+where *nome_coluna* = '*valor_coluna*'
+
+### EXEMPLO
+
+`update cursos`<br>
+`set nome = 'HTML5'`<br>
+`where idcurso = '1';`
