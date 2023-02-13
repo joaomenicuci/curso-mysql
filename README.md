@@ -1,2 +1,3 @@
-# curso-mysql
- Curso de MySQL com 40 horas
+# MySQL
+ 
+ ## Curso de MySQL com 40 horas
