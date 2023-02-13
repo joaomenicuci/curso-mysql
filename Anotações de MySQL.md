@@ -12,6 +12,9 @@ drop table
 ### DML = Data Manipulation Language 
 ```
 insert into
+update
+delete
+truncate
 ```
 ## **CRIAR BANCO DE DADOS**
 
@@ -44,15 +47,25 @@ create table *nome_tabela* (<br>
 `primary key (id)`<br>
 `) default charset = utf8;`
 
-## **DELETAR BANCO DE DADOS OU TABELAS**
+## **DELETAR BANCO DE DADOS, TABELAS OU LINHAS**
 
 drop database *nome_bd*;<br>
-drop table *nome_tabela*;
+drop table *nome_tabela*;<br>
+<br>
+delete from *nome_tabela*<br>
+where idcurso = '*numero_idcursos*'<br>
+<br>
+truncate table *nome_tabela*
 
 ### EXEMPLO:
 
 `drop database cadastro;`<br>
-`drop table pessoas;`
+`drop table pessoas;`<br>
+<br>
+`delete from cursos`<br>
+`where idcurso = '8';`<br>
+<br>
+`truncate table cursos;`
 
 ## **ADICIONAR DADOS NA TABELA**
 
