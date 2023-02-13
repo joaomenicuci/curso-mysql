@@ -28,7 +28,7 @@ default collate utf8_general_ci;
 ## **CRIAR TABELAS DENTRO DO BANDO DE DADOS**
 
 create table *nome_tabela* (<br>
-*nome_da_coluna tipo_primitivo config_adicional*,<br>
+*nome_da_coluna* *tipo_primitivo* *config_adicional*,<br>
 ) default charset = utf8;
 
 ### EXEMPLO:
