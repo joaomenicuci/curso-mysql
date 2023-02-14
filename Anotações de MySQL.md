@@ -114,12 +114,21 @@ where idcurso = '1';
 
 select * from *nome_tabela*<br>
 select *nome_coluna* from *nome_tabela*<br>
+<br>
 where *nome_coluna* = '*valor_coluna*'<br>
-order by *nome_coluna*
+where *nome_coluna* = '*valor_coluna*' and *nome_coluna* = '*valor_coluna*'<br>
+where *nome_coluna* like '%*alguma_letra*%'<br>
+<br>
+order by *nome_coluna*;
 
 ### EXEMPLO
 ```
 select * fom cursos
+
 where ano = '2016'
-order by nome
+where ano = '2016' and carga = '40'
+where nome like '%a%' [filtra os dados da tabela que possuem a letra A]
+where nome like '%silva%'
+
+order by nome;
 ```
